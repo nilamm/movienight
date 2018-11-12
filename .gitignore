@@ -1,0 +1,9 @@
+env/
+__pycache__/
+*.py[cod]
+.DS_Store
+.python-version
+
+# Flask stuff:
+instance/
+.webassets-cache

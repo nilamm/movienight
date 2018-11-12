@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+My List
+{% endblock %}
+
+{% block body %}
+
+<div>
+  Movies on my list:
+  <!--Begin movie list-->
+  <div>
+    {% for movie in movies %}
+    <div><a href="/movie/{{ movie.id }}">{{ movie.title }}, {{ movie.id }}<a /></div>
+    {% endfor %}
+  </div>
+  <!--End movie list-->
+</div>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block header_title %}
+| {{ movie.title }}
+{% endblock %}
+
+
+{% block body %}
+<div class="row movie-page">
+  <div class="col-md-auto movie-page-image text-center mb-sm-0">
+    <img src="{{ poster }}" alt="{{ movie.title }} poster">
+  </div>
+  <div class="movie-description col">
+    <div class="row">
+      <div class="col-lg-10">
+        <h1>{{ movie.title }}</h1>
+        <div class="movie-year">{{ year }}</div>
+        <div class="movie-genres">{{ genres }}</div>
+        <div class="movie-overview">{{ movie.overview }}</div>
+
+        {% if on_list %}
+        <form action="/movie/delete/{{ movie.id }}" method="post">
+          <button class="btn btn-danger" type="submit">- Remove Movie from List</button>
+        </form>
+        {% else %}
+        <form action="/movie/{{ movie.id }}" method="post">
+          <button class="btn btn-primary" type="submit">+ Add Movie to List</button>
+        </form>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

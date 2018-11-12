@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Shared Movies
+{% endblock %}
+
+{% block body %}
+<div>
+  {% if movies is not none %}
+  {% for movie in movies %}
+  <div><a href="/movie/{{ movie.id }}">{{ movie.title }}, {{ movie.id }}<a /></div>
+  {% endfor %}
+  {% else %}
+  Sorry, you don't have any movies in common.
+  {% endif %}
+</div>
+{% endblock %}

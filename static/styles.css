@@ -1,0 +1,173 @@
+/* enable hand cursor on buttons */
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+/* body */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f4;
+  color: #373737;
+  padding-bottom: 20px;
+}
+
+h1, h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+/* Nav */
+.navbar {
+  padding: 10px 20px;
+  background-color: #f4f4f4 !important;
+}
+
+.navbar-brand {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.navbar input[type="search"] {
+  width: 300px;
+}
+
+/* Main body */
+.page-body {
+  margin-top: 20px;
+}
+
+/* Movie detail page */
+.movie-page {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 25px;
+}
+
+.movie-page-image {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 20px;
+}
+
+.movie-page-image img {
+  max-width: 200px;
+  height: auto;
+}
+
+.movie-description {
+  padding-left: 30px;
+}
+
+.movie-year {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.movie-genres {
+  margin-top: 6px;
+  margin-bottom: 7px;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.movie-overview {
+  margin-bottom: 20px;
+}
+
+/* Movie cards */
+div.movie-card {
+  max-width: 300px;
+  margin: 10px auto;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  background-color: #ffffff;
+}
+
+div.movie-card a {
+  color: #373737;
+}
+
+div.movie-card a:hover {
+  text-decoration: none;
+}
+
+div.movie-card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.movie-card-inner {
+  max-width: 220px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.poster-image img {
+  border: 1px solid #f0efec;
+  max-width: 200px;
+  height: auto;
+}
+
+.poster-description {
+  margin: 10px 0;
+}
+
+.poster-description h3 {
+  font-weight: bold;
+}
+
+/* Compare users page */
+.user-icon-path {
+  fill: #C0b283;
+}
+
+.user-icon-svg {
+  width: 100px;
+  height: auto;
+}
+
+.user-card {
+  width: 100%;
+  max-width: 450px;
+  margin: 10px 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.user-card:hover, form.compare-users-form input[type=checkbox]:checked+label {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+form.compare-users-form input[type=checkbox]:checked+label {
+  background-color: #C0E6DE;
+}
+
+.username {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.compare-users-form button {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Login form */
+.login-form {
+  margin-top: 20px;
+}
+
+.login-form button {
+  margin-right: 10px;
+}
+
+.login-form .error, .registration-form .error {
+  margin-top: 5px;
+  color: #C73E1D;
+  font-style: italic;
+}
